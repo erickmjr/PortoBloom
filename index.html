@@ -74,32 +74,32 @@
         <div class="container-flex">
             <section id="itens">
                 <ul>
-                    <li class="item">
+                    <li class="item" id="item1">
                         <p>Heart</p>
                         <img src="portobloom/coracao.jpg" alt="Flor" class="longImage">
                         <button class="botao-interesse">Tenho interesse</button>
                     </li>
-                    <li class="item">
+                    <li class="item" id="item2">
                         <p>Flower</p>
                         <img src="portobloom/flor.jpg" alt="Flor" class="longImage">
                         <button class="botao-interesse">Tenho interesse</button>
                     </li>
-                    <li class="item">
+                    <li class="item" id="item3">
                         <p>Hearts</p>
                         <img src="portobloom/longheart.jpg" alt="Flor" class="longImage">
                         <button class="botao-interesse">Tenho interesse</button>
                     </li>
-                    <li class="item">
+                    <li class="item" id="item4">
                         <p>Bubble</p>
                         <img src="portobloom/bubble.jpg" alt="Flor" class="longImage">
                         <button class="botao-interesse">Tenho interesse</button>
                     </li>
-                    <li class="item">
+                    <li class="item" id="item5">
                         <p>Dog</p>
                         <img src="portobloom/dog.jpg" alt="Flor" class="longImage">
                         <button class="botao-interesse">Tenho interesse</button>
                     </li>
-                    <li class="item">
+                    <li class="item" id="item6">
                         <p>Sun&Moon</p>
                         <img src="portobloom/sun&moon.jpg" alt="Flor">
                         <button class="botao-interesse">Tenho interesse</button>
@@ -114,16 +114,27 @@
                 <div>
                     <div id="div-form">
                         <form>
-                            <input type="text" placeholder="Nome">
-                            <input type="email" placeholder="E-mail">
-                            <input type="tel" placeholder="Telefone">
-                            <textarea name="mensagem" id="mensagem" placeholder="Deixe sua mensagem..."></textarea>
+                            <div>
+                                <input type="text" placeholder="Nome" id="nome">
+                                <input type="email"  id="email" placeholder="exemplo@gmail.com">
+                                <input type="tel" id="telefone">
+                                <textarea name="mensagem" id="mensagem" placeholder="Deixe sua mensagem..."></textarea>
+                                <button id="form-button" type="submit">
+                                    Enviar
+                                </button>
+                            </div>
                         </form>
+
+                        <div id="divNomeDoItem">
+                            <h2 id="nomeItemSelecionado"></h2>
+                        </div>
+
                     </div>
+
                     <div id="div-itemInteresse">
-                        <span>
+                        <span id="itemSelecionado">
                         </span>
-                        <p>Nenhum item selecionado...</p>
+                        <p id="msgItemSelecionado">Nenhum item selecionado...</p> 
                     </div>
                 </div>
             </section>
@@ -137,11 +148,11 @@
 
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     
-    <script src="jquery-plugins/js/jquery.mask.min.js"></script>
+    <script src="jquery-plugins/jquery-plugins/js/jquery.mask.min.js"></script>
     
-    <script src="jquery-plugins/js/jquery.validate.min.js"></script>
+    <script src="jquery-plugins/jquery-plugins/js/jquery.validate.min.js"></script>
     
-    <script src="jquery-plugins/js/messages_pt_BR.min.js"></script>
+    <script src="jquery-plugins/jquery-plugins/js/messages_pt_BR.min.js"></script>
 
     <script src="main.js"></script>
 

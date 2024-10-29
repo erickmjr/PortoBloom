@@ -58,4 +58,69 @@ $(document).ready(function(){
             scrollTop: destino.offset().top
         }, 1000)
     })
-})
+
+    $("#telefone").mask("(00) 00000-0000", {
+        placeholder: '(00) 00000-0000'
+    });
+
+    $("form").validate({
+
+        errorClass: "error",
+
+        errorPlacement: function(error, element){
+            error.insertAfter(element);
+        },
+
+        rules: {
+            nome: {
+                required: true
+            },
+            
+            email: {
+                required: true,
+                email: true,
+                
+            },
+    
+            telefone: {
+                required: true,
+
+            }
+        }
+    })
+
+    $(".botao-interesse").click(function(){
+
+        let destino = $("#contato");
+
+        $("html").animate({
+            scrollTop: destino.offset().top
+        }, 1000)
+
+        let spanSelecao = $("#itemSelecionado");
+
+        let nomeItemH2 = $("#nomeItemSelecionado");
+
+        let liId = $(this).parent().attr("id");
+        
+        let imagem = $(`#${liId}`).children("img").attr("src");
+
+        let nomeItem = $(`#${liId}`).children("p").text();
+
+        
+        $("#msgItemSelecionado").css("display", "none");
+
+        $("#itemSelecionado").css("display", "block");
+        
+        spanSelecao.html(`<img src="${imagem}">`);
+
+    nomeItemH2.html(`Ótima escolha! <br> Bloom ${nomeItem}`);
+
+    nomeItemH2.css({
+        "display": "block",
+        "font-family": "var(--fonte-destaque)"
+    })
+            
+            
+        })
+    });
