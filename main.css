@@ -1,0 +1,272 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+:root{
+    --cor-destaque: #656149;
+    --cor-destaque1: #0B2114;
+    --cor-de-fundo: #DFD9C9;
+    --cor-texto-importante: #fff;
+    --cor-texto: #333333;
+    --cor-section: #969292;
+    --cor-input: #000;
+    --fonte-destaque: "Cormorant", sans-serif;
+    --fonte-padrao:  "Merriwheather", sans-serif;
+    
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-destaque);
+    overflow-x: hidden;
+}
+
+h2, p{
+    color: var(--cor-texto);
+    font-family: var(--fonte-padrao);
+}
+
+header #container-header{
+    background-color: var(--cor-destaque1);
+    padding: 3vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-height: 15vh;
+}
+
+header img{
+    max-width: 10vw;
+    max-height: 80%;
+}
+
+#container-header h1{
+    font-size: 3vw;
+    color: var(--cor-texto-importante);
+}
+
+header ul{
+    list-style-type: none;
+}
+
+.menu-hamburguer{
+    color: var(--cor-de-fundo);
+    width: 5vw;
+    cursor: pointer;
+}
+
+.menu-hamburguer span{
+    height: 0.3vw;
+    width: 100%;
+    background-color: var(--cor-de-fundo);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+nav{
+    max-height: 10vh;
+    font-size: 2vw;
+    padding: 1vw 2vw;
+    background-color: var(--cor-section);
+    width: 100%;
+    display: none;
+
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul a{
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+section{
+    max-width: 100vw;
+    margin: 1vw;
+}
+
+#bombando h2{
+    color: var(--cor-input);
+    font-family: var(--fonte-destaque);
+    margin-left: 5vw;
+}
+
+#carousel-images {
+    padding: 2vw;
+    width: 100%;
+    text-align: center;
+    border-radius: 8px;
+}
+
+#carousel-images img {
+    height: 30vh;
+    border-radius: 8px;
+    box-shadow: 1px 5px 15px 1px rgba(0, 0, 0, 0.224);
+}
+
+#carousel-images .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content p{
+    color: var(--cor-input);
+    margin-top: 0.5vw;
+}
+
+#interesse{
+    width: 100vw;
+}
+
+#container-interesse{
+    width: 90%;
+    background-color: white;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    padding: 0.5vw;
+}
+
+#container-interesse button{
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+
+#container-interesse img{
+    max-width: 2.5vw;
+    border: none;
+    margin-right: 1vw;
+}
+
+#interesse input{
+    padding: 1vw;
+    font-weight: bold;
+    font-family: var(--fonte-destaque);
+    color: var(--cor-input);
+    font-size: 1.25vw;
+    border: none;
+    border-radius: 8px;
+    width: 90%;
+}
+
+#interesse input:focus{
+    outline: none;
+}
+
+#interesse input:not(:placeholder-shown) {
+    font-family: var(--fonte-padrao);
+    font-weight: lighter;
+}
+
+#container-itens{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#itens{
+    text-align: center;
+    margin: 1vw;
+    background-color: #d1c197;
+    padding: 2vw;
+    max-width: 90%;
+    border-radius: 10px;
+}
+
+#itens img{
+    max-width: 20vw;
+    border-radius: 10px;
+}
+
+#itens img:hover{
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.164);
+}
+
+#itens ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#itens ul li{
+    list-style-type: none;
+}
+
+.item{
+    flex: 1 1 33%;
+}
+
+.item img{
+    max-height: 75%;
+}
+
+
+@media (max-width: 1366px) {
+
+    #container-interesse img{
+        max-width: 2.5vw;
+        border: none;
+        margin-right: 1vw;
+    }
+
+    
+    #container-header h1{
+        font-size: 3vw;
+    }
+
+    #carousel-images img {
+        height: 20vh;
+    }
+    
+}
+
+@media (max-width: 1000px) {
+
+    header img{
+        max-width: 15vw;
+    }
+
+    #container-header h1{
+        font-size: 5vw;
+    }
+
+    .menu-hamburguer span{
+        height: 0.2rem;
+        
+    }
+
+    nav{
+        max-height: 10vh;
+        font-size: 3vw;
+    }
+
+    #bombando h2{
+        font-size: 4vw;
+    }
+
+    #container-interesse img{
+        max-width: 4vw;
+    }
+    
+    #interesse input{
+        font-size: 3vw;
+    }
+}
