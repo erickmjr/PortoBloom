@@ -13,7 +13,7 @@
     --cor-section: #969292;
     --cor-input: #000;
     --fonte-destaque: "Cormorant", sans-serif;
-    --fonte-padrao:  "Merriwheather", sans-serif;
+    --fonte-padrao:  "Merriweather", sans-serif;
     
 }
 
@@ -186,18 +186,14 @@ section{
     text-align: center;
     margin: 1vw;
     background-color: #d1c197;
-    padding: 2vw;
+    padding: 0 2vw 2vw 2vw;
     max-width: 90%;
     border-radius: 10px;
 }
 
 #itens img{
-    max-width: 20vw;
-    border-radius: 10px;
-}
-
-#itens img:hover{
-    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.164);
+    max-width: 18vw;
+    border-radius: 10px 10px 0 0;
 }
 
 #itens ul{
@@ -208,14 +204,39 @@ section{
 
 #itens ul li{
     list-style-type: none;
+    margin-top: 2.25vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 
 .item{
     flex: 1 1 33%;
+    display: flex;
+    flex-direction: column;
 }
 
-.item img{
-    max-height: 75%;
+.item p{
+    font-family: var(--fonte-destaque);
+    font-weight: 900;
+    font-size: 3vw;
+}
+
+.botao-interesse{
+    background-color: var(--cor-section);
+
+    font-family: var(--fonte-padrao);
+    font-style: italic;
+    color: white;
+    font-weight: bolder;
+
+    width: 18vw;
+    padding: 1vw;
+    border: none;
+    cursor: pointer;
+
+    border-radius: 0 0 10px 10px;   
 }
 
 
@@ -268,5 +289,9 @@ section{
     
     #interesse input{
         font-size: 3vw;
+    }
+
+    #itens{
+        padding: 3vw;
     }
 }

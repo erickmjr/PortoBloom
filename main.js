@@ -30,4 +30,20 @@ $(document).ready(function(){
     $(".menu-hamburguer").click(function(){
         $("nav").slideToggle();
     })
+
+    $("#li-bombando").click(function(){
+        let destino = $("#bombando");
+
+        $("html").animate({
+            scrollTop: destino.offset().top
+        }, 1000)
+    })
+
+    $("#li-produtos").click(function(){
+        let destino = $("#interesse");
+
+        $("html").animate({
+            scrollTop: destino.offset().top
+        }, 1000)
+    })
 })
