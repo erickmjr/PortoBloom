@@ -1,5 +1,9 @@
 $(document).ready(function(){
 
+    $("html").click(function(e){
+        e.preventDefault();
+    })
+
     $("#carousel-images").slick({
         autoplay: true,
         autoplaySpeed: 1500,
@@ -41,6 +45,14 @@ $(document).ready(function(){
 
     $("#li-produtos").click(function(){
         let destino = $("#interesse");
+
+        $("html").animate({
+            scrollTop: destino.offset().top
+        }, 1000)
+    })
+
+    $("#li-contato").click(function(){
+        let destino = $("#contato");
 
         $("html").animate({
             scrollTop: destino.offset().top
