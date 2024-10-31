@@ -44,7 +44,7 @@ $(document).ready(function(){
     })
 
     $("#li-produtos").click(function(){
-        let destino = $("#interesse");
+        let destino = $("#catalogo");
 
         $("html").animate({
             scrollTop: destino.offset().top

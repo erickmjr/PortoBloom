@@ -108,6 +108,7 @@ section{
     color: var(--cor-input);
     font-family: var(--fonte-destaque);
     margin-left: 5vw;
+    font-size: 3vw;
 }
 
 #carousel-images {
@@ -134,51 +135,11 @@ section{
     margin-top: 0.5vw;
 }
 
-#interesse{
-    width: 100vw;
-}
-
-#container-interesse{
-    width: 90%;
-    background-color: white;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 8px;
-    padding: 0.5vw;
-}
-
-#container-interesse button{
-    border: none;
-    cursor: pointer;
-    background: none;
-}
-
-#container-interesse img{
-    max-width: 2.5vw;
-    border: none;
-    margin-right: 1vw;
-}
-
-#interesse input{
-    padding: 1vw;
-    font-weight: bold;
+#catalogo{
+    text-align: center;
+    font-size: 5vw;
     font-family: var(--fonte-destaque);
-    color: var(--cor-input);
-    font-size: 1.25vw;
-    border: none;
-    border-radius: 8px;
-    width: 90%;
-}
-
-input:focus{
-    outline: none;
-}
-
-input:not(:placeholder-shown) {
-    font-family: var(--fonte-padrao);
-    font-weight: lighter;
+    font-weight: bold;
 }
 
 .container-flex{
@@ -356,17 +317,23 @@ form div{
     height: 100%;
 }
 
+footer{
+    width: 100vw;
+    overflow: hidden;
+    background-color: var(--cor-destaque1);
+    padding: 1vw;
+    text-align: center;
+}
 
+footer a{
+    color: var(--cor-texto-importante);
+    text-decoration: underline;
+    font-family: var(--fonte-padrao);
+    
+}
 
 @media (max-width: 1366px) {
 
-    #container-interesse img{
-        max-width: 2.5vw;
-        border: none;
-        margin-right: 1vw;
-    }
-
-    
     #container-header h1{
         font-size: 3vw;
     }
@@ -399,14 +366,6 @@ form div{
 
     #bombando h2{
         font-size: 4vw;
-    }
-
-    #container-interesse img{
-        max-width: 4vw;
-    }
-    
-    #interesse input{
-        font-size: 3vw;
     }
 
     #itens{
