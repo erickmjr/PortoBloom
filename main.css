@@ -329,7 +329,7 @@ footer a{
     color: var(--cor-texto-importante);
     text-decoration: underline;
     font-family: var(--fonte-padrao);
-    
+
 }
 
 @media (max-width: 1366px) {
@@ -370,6 +370,10 @@ footer a{
 
     #itens{
         padding: 3vw;
+    }
+
+    .item{
+        flex: 2 2 50%
     }
 
     #contato h2{
