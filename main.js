@@ -1,8 +1,10 @@
 $(document).ready(function(){
 
-    $("html").click(function(e){
+    $("button").click(function(e){
         e.preventDefault();
     })
+
+    $("#divNomeDoItem").css("display", "none");
 
     $("#carousel-images").slick({
         autoplay: true,
@@ -44,7 +46,7 @@ $(document).ready(function(){
     })
 
     $("#li-produtos").click(function(){
-        let destino = $("#interesse");
+        let destino = $("#catalogo");
 
         $("html").animate({
             scrollTop: destino.offset().top
@@ -107,20 +109,20 @@ $(document).ready(function(){
 
         let nomeItem = $(`#${liId}`).children("p").text();
 
-        
+        $("#divNomeDoItem").css("display", "flex");
+
         $("#msgItemSelecionado").css("display", "none");
 
         $("#itemSelecionado").css("display", "block");
         
         spanSelecao.html(`<img src="${imagem}">`);
 
-    nomeItemH2.html(`Ótima escolha! <br> Bloom ${nomeItem}`);
+        nomeItemH2.html(`Ótima escolha! <br> Vela "${nomeItem}"`);
 
-    nomeItemH2.css({
-        "display": "block",
-        "font-family": "var(--fonte-destaque)"
-    })
-            
-            
+        nomeItemH2.css({
+            "display": "block",
+            "font-family": "var(--fonte-destaque)"
         })
-    });
+    })
+
+});

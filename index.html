@@ -30,7 +30,7 @@
                         <a href="#bombando">Bombando</a>
                     </li>
                     <li id="li-produtos">
-                        <a href="#interesse">Produtos</a>
+                        <a href="#catalogo">Catálogo</a>
                     </li>
                     <li id="li-contato">
                         <a href="#">Contato</a>
@@ -46,15 +46,15 @@
             <div id="carousel-images">
                 <div class="content">
                     <img src="portobloom/horizontais/flower-HORIZONTAL.jpg" alt="nome da vela">
-                    <p>Nome da vela</p>
+                    <p>Bloom</p>
                 </div>
                 <div class="content">
                     <img src="portobloom/horizontais/longheart-HORIZONTAL.jpg" alt="nome da vela">
-                    <p>Nome da vela</p>
+                    <p>Coração P</p>
                 </div>
                 <div class="content">
                     <img src="portobloom/horizontais/sun&moon-HORIZONTAL.jpg" alt="Sun&Moon">
-                    <p>Sun & Moon</p>
+                    <p>Moon&Sun</p>
                 </div>
                 <div class="content">
                     <img src="portobloom/horizontais/fosforo.jpg" alt="Fósforo PortoBloom">
@@ -63,82 +63,105 @@
             </div>
         </section>
 
-        <section id="interesse">
-            <div id="container-interesse"><input type="text" placeholder="O que você está procurando?">
-            <button>
-                <img src="portobloom/icones/lupa.png" alt="pesquisar">
-            </button>
-            </div>
-        </section>
-
+        <h2 id="catalogo">Catálogo</h2>
         <div class="container-flex">
             <section id="itens">
                 <ul>
                     <li class="item" id="item1">
-                        <p>Heart</p>
+                        <p>Coração M</p>
                         <img src="portobloom/coracao.jpg" alt="Flor" class="longImage">
                         <button class="botao-interesse">Tenho interesse</button>
                     </li>
                     <li class="item" id="item2">
-                        <p>Flower</p>
+                        <p>Bloom</p>
                         <img src="portobloom/flor.jpg" alt="Flor" class="longImage">
                         <button class="botao-interesse">Tenho interesse</button>
                     </li>
                     <li class="item" id="item3">
-                        <p>Hearts</p>
+                        <p>Coração P</p>
                         <img src="portobloom/longheart.jpg" alt="Flor" class="longImage">
                         <button class="botao-interesse">Tenho interesse</button>
                     </li>
                     <li class="item" id="item4">
-                        <p>Bubble</p>
+                        <p>Bubble P</p>
                         <img src="portobloom/bubble.jpg" alt="Flor" class="longImage">
                         <button class="botao-interesse">Tenho interesse</button>
                     </li>
                     <li class="item" id="item5">
-                        <p>Dog</p>
+                        <p>Patinha</p>
                         <img src="portobloom/dog.jpg" alt="Flor" class="longImage">
                         <button class="botao-interesse">Tenho interesse</button>
                     </li>
                     <li class="item" id="item6">
-                        <p>Sun&Moon</p>
+                        <p>Moon&Sun</p>
                         <img src="portobloom/sun&moon.jpg" alt="Flor">
                         <button class="botao-interesse">Tenho interesse</button>
                     </li>
                 </ul>
+
+                <div id="download">
+                    <p>
+                        <a href="https://drive.google.com/drive/folders/1-CTEQExChT8YZOF0V_44ixxiinlCzwhe" target="_blank">Faça Download do Catálogo completo</a>
+                    </p>
+                </div>
             </section>
         </div>
 
         <div class="container-flex">
             <section id="contato">
                 <h2>Contato</h2>
-                <div>
-                    <div id="div-form">
-                        <form>
-                            <div>
-                                <input type="text" placeholder="Nome" id="nome">
-                                <input type="email"  id="email" placeholder="exemplo@gmail.com">
-                                <input type="tel" id="telefone">
-                                <textarea name="mensagem" id="mensagem" placeholder="Deixe sua mensagem..."></textarea>
-                                <button id="form-button" type="submit">
-                                    Enviar
-                                </button>
-                            </div>
-                        </form>
-
+                <div id="container-contato">
+                    <div id="formas-contato">
+                        <ul>
+                            <li>
+                                <a href="https://www.instagram.com/portobloom/" target="_blank">
+                                    <img src="imagens/instagram.png" alt="Instagram">
+                                    <h3>
+                                        Instagram
+                                    </h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://api.whatsapp.com/send/?phone=5575988721137&text&type=phone_number&app_absent=0" target="_blank">
+                                    <img src="imagens/whatsapp.png" alt="Whatsapp">
+                                    <h3>
+                                        Whatsapp
+                                    </h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.tiktok.com/@portobloom?_t=8goIWAROFfi&_r=1" target="_blank">
+                                    <img src="imagens/tiktok.png" alt="TikTok">
+                                    <h3>
+                                        TikTok
+                                    </h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://br.pinterest.com/portobloom/" target="_blank">
+                                    <img src="imagens/pinterest.png" alt="Pinterest">
+                                    <h3>
+                                        Pinterest
+                                    </h3>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
                         <div id="divNomeDoItem">
                             <h2 id="nomeItemSelecionado"></h2>
                         </div>
-
-                    </div>
-
-                    <div id="div-itemInteresse">
-                        <span id="itemSelecionado">
-                        </span>
-                        <p id="msgItemSelecionado">Nenhum item selecionado...</p> 
+                        <div id="div-itemInteresse">
+                            <span id="itemSelecionado">
+                            </span>
+                            <p id="msgItemSelecionado">Nenhum item selecionado...</p>
+                        </div>
                     </div>
                 </div>
             </section>
         </div>
+
+        <footer><a href="https://github.com/erickmjr" target="_blank">erickmjr &copy;</a></footer>
     </main>
 
 
@@ -147,12 +170,6 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    
-    <script src="jquery-plugins/jquery-plugins/js/jquery.mask.min.js"></script>
-    
-    <script src="jquery-plugins/jquery-plugins/js/jquery.validate.min.js"></script>
-    
-    <script src="jquery-plugins/jquery-plugins/js/messages_pt_BR.min.js"></script>
 
     <script src="main.js"></script>
 
