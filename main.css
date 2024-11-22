@@ -403,8 +403,16 @@ footer a{
         padding: 3vw;
     }
 
-    #contato h2{
+    .item p{
         font-size: 5vw;
+    }
+
+    #catalogo{
+        font-size: 7vw;
+    }
+
+    #contato h2{
+        font-size: 4vw;
     }
 
     #container-contato{
