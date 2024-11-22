@@ -65,31 +65,6 @@ $(document).ready(function(){
         placeholder: '(00) 00000-0000'
     });
 
-    $("form").validate({
-
-        errorClass: "error",
-
-        errorPlacement: function(error, element){
-            error.insertAfter(element);
-        },
-
-        rules: {
-            nome: {
-                required: true
-            },
-            
-            email: {
-                required: true,
-                email: true,
-                
-            },
-    
-            telefone: {
-                required: true,
-
-            }
-        }
-    })
 
     $(".botao-interesse").click(function(){
 

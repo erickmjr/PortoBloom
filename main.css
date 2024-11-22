@@ -349,12 +349,11 @@ footer{
     text-align: center;
 }
 
-footer a{
-    color: var(--cor-texto-importante);
-    text-decoration: underline;
-    font-family: var(--fonte-padrao);
 
+footer a{
+    color: var(--cor-de-fundo);
 }
+
 
 @media (max-width: 1366px) {
 
@@ -392,16 +391,16 @@ footer a{
         font-size: 6vw;
     }
 
-    h2#catalogo{
-        font-size: 8vw;
+    #container-interesse img{
+        max-width: 4vw;
+    }
+    
+    #interesse input{
+        font-size: 3vw;
     }
 
     #itens{
         padding: 3vw;
-    }
-
-    .item p{
-        font-size: 5vw;
     }
 
     #contato h2{
